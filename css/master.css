@@ -1,0 +1,120 @@
+
+/* Open Sans */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,800');
+
+/* Source Sans Pro */
+/* @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900'); */
+
+/* IBM Plex Mono */
+/* @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500,500i,700'); */
+
+/* Playfair Display*/
+/* @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i,900'); */
+
+
+body{
+  margin: 0;
+  border: 0;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.bg{
+  position: fixed;
+  background-image: linear-gradient(136deg, #A339CE 0%, #4718F6 100%);
+  height: 100vh;
+  width: 100vw;
+}
+
+.clockWrapper{
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  width: 40vw;
+  height: 40vw;
+  min-width: 350px;
+  min-height: 350px;
+  background-image: linear-gradient(136deg, #c95bf6 0%, #4215EA 100%);
+}
+
+/* .clockWrapper::after{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  width: 3%;
+  height: 3%;
+  content: "";
+  background: #FFEC00;
+} */
+
+.clockShadow{
+  z-index: -1 !important;
+  width: 45vw !important;
+  height: 45vw !important;
+  background-image: linear-gradient(-40deg, #3023AE 0%, #C86DD7 100%) !important;
+  filter: blur(30px);
+}
+
+.hours {
+  position: absolute;
+  background: #FFEC00;
+  height: 20%;
+  left: 50%;
+  top: 30%;
+  transform: translatex(-50%);
+  transform-origin: 50% 100%;
+  width: 1.3%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 11px 12px 24px 0 rgba(0,0,0,0.27);
+}
+
+.minutes {
+  position: absolute;
+  background: #FFEC00;
+  height: 40%;
+  left: 50%;
+  top: 10%;
+  transform: translatex(-50%);
+  transform-origin: 50% 100%;
+  width: 1%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 11px 12px 24px 0 rgba(0,0,0,0.27);
+}
+
+.seconds {
+  position: absolute;
+  background: #D0021B;
+  height: 45%;
+  left: 50%;
+  top: 14%;
+  transform: translatex(-50%);
+  transform-origin: 50% 80%;
+  width: 0.8%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 11px 12px 24px 0 rgba(0,0,0,0.27);
+  z-index: 5;
+}
+
+/* .hours-container {
+  animation: rotate 43200s infinite linear;
+}
+.minutes-container {
+  animation: rotate 3600s infinite steps(60);
+}
+.seconds-container {
+  animation: rotate 60s infinite steps(60);
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg);
+  }
+} */
